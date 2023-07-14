@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model User;
+
+
+<form style="display:flex; flex-direction:column; align-items : center">
+
+    <label for="first">
+        Prenom
+    </label>
+    <input type="text" id="first" asp-for="Firstname" />
+
+    <label for="last">
+        Nom
+    </label>
+    <input type="text" id="last" value="@Model.Lastname" />
+
+    <label for="birth">
+        Date de naissance
+    </label>
+    <input type="date" id="birth" value="@Model.Birthdate" />
+
+    <label for="email">
+        Email
+    </label>
+
+    <input type="text" id="email" value="@Model.Email" />
+
+
+    <label>
+        Genre
+    </label>
+    <div style="display: flex; flex-direction: row">
+        <input type="radio" id="F" name="sexe" value="F">
+        <label for="F">Femme</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" id="M" name="sexe" value="H">
+        <label for="M">Homme</label>
+    </div>
+    <br />
+    <button type="button" class="btn btn-dark">VALIDER</button>
+
+
+</form>

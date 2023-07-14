@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+    Firstname = firstname;
+    Lastname = lastname;
+    Birthdate = birthdate;
+    Email = email;
+    Gender = gender;
+
+*@
+@{
+}
+
+<h1 style="text-align:center">CREATE USER</h1>
+
+<form style="display:flex; flex-direction:column; align-items : center">
+
+    <label for="first">
+        Prenom
+    </label>
+    <input type="text" id="first" />
+
+    <label for="last">
+        Nom
+    </label>
+    <input type="text" id="last" />
+
+    <label for="birth">
+        Date de naissance
+    </label>
+    <input type="date" id="birth" />
+    
+    <label for="email">
+        Email
+    </label>
+    
+    <input type="text" id="email"/>
+
+
+    <label>
+        Genre
+    </label>
+    <div style="display: flex; flex-direction: row">
+        <input type="radio" id="F" name="sexe" value="F">
+        <label for="F">Femme</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" id="M" name="sexe" value="H">
+        <label for="M">Homme</label>
+    </div>
+    <br />
+    <button type="button" class="btn btn-dark">VALIDER</button>
+    
+
+</form>
